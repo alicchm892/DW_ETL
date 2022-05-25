@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="LOAD_STG"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{FC801D3D-DDAA-4DE5-8274-832F626FE7E3}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{4069AE6D-5F09-4C9B-951F-6E86DEC7B044}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -60,7 +60,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Pearson_EmailAddress"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="7">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -77,7 +77,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Pearson_Pearson"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="8">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -94,7 +94,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Pearson_PersonPhone"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="9">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -128,7 +128,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Production_ProductCategory"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="7">
+      DTS:ThreadHint="11">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -144,7 +144,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Production_ProductModel"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="8">
+      DTS:ThreadHint="12">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -161,7 +161,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Production_ProductSubcategory"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="13">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -178,12 +178,29 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Sales_Currency"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="9">
+      DTS:ThreadHint="14">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{EFAE8D48-1DB0-40D7-9C64-66D126172311}"
           SQLTask:SqlStatementSource="delete from [stg].[Sales_Currency]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\delete Sales_CurrencyRate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{67EB6A93-E9B8-498C-B2DB-FB453F406338}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="delete Sales_CurrencyRate"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{EFAE8D48-1DB0-40D7-9C64-66D126172311}"
+          SQLTask:SqlStatementSource="delete from [stg].[Sales_CurrencyRate]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -212,7 +229,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Sales_SalesOrderDetail"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="11">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -229,7 +246,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Sales_SalesOrderHeader"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="12">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -246,7 +263,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="delete Sales_Store"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="13">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4807,6 +4824,432 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\load Sales_CurrencyRate"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{B05A30DF-D149-49BA-AB69-A16932BFF895}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="load Sales_CurrencyRate"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\load Sales_CurrencyRate\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[stg].[Sales_CurrencyRate]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load Sales_CurrencyRate\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{EFAE8D48-1DB0-40D7-9C64-66D126172311}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CurrencyRateID]"
+                      cachedDataType="i4"
+                      cachedName="CurrencyRateID"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyRateID]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateID]" />
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CurrencyRateDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="CurrencyRateDate"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyRateDate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateDate]" />
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FromCurrencyCode]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="FromCurrencyCode"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FromCurrencyCode]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[FromCurrencyCode]" />
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ToCurrencyCode]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="ToCurrencyCode"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ToCurrencyCode]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[ToCurrencyCode]" />
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AverageRate]"
+                      cachedDataType="cy"
+                      cachedName="AverageRate"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AverageRate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[AverageRate]" />
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EndOfDayRate]"
+                      cachedDataType="cy"
+                      cachedName="EndOfDayRate"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndOfDayRate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[EndOfDayRate]" />
+                    <inputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ModifiedDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="ModifiedDate"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyRateID]"
+                      dataType="i4"
+                      name="CurrencyRateID" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CurrencyRateDate]"
+                      dataType="dbTimeStamp"
+                      name="CurrencyRateDate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FromCurrencyCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="FromCurrencyCode" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ToCurrencyCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="ToCurrencyCode" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AverageRate]"
+                      dataType="cy"
+                      name="AverageRate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndOfDayRate]"
+                      dataType="cy"
+                      name="EndOfDayRate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="ModifiedDate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Timestamp]"
+                      dataType="dbTimeStamp"
+                      name="Timestamp" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\load Sales_CurrencyRate\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\load Sales_CurrencyRate\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Sales].[CurrencyRate]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\load Sales_CurrencyRate\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{D31B05E2-8F88-4405-8D57-CAA7CD5B59B9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LocalHost.AdventureWorks2019]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyRateID]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateID]"
+                      name="CurrencyRateID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyRateDate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[CurrencyRateDate]"
+                      name="CurrencyRateDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[FromCurrencyCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FromCurrencyCode]"
+                      length="3"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[FromCurrencyCode]"
+                      name="FromCurrencyCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[ToCurrencyCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ToCurrencyCode]"
+                      length="3"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[ToCurrencyCode]"
+                      name="ToCurrencyCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[AverageRate]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AverageRate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[AverageRate]"
+                      name="AverageRate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[EndOfDayRate]"
+                      dataType="cy"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EndOfDayRate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[EndOfDayRate]"
+                      name="EndOfDayRate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].Columns[ModifiedDate]"
+                      name="ModifiedDate"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyRateID]"
+                      dataType="i4"
+                      name="CurrencyRateID" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CurrencyRateDate]"
+                      dataType="dbTimeStamp"
+                      name="CurrencyRateDate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FromCurrencyCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="FromCurrencyCode" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ToCurrencyCode]"
+                      dataType="wstr"
+                      length="3"
+                      name="ToCurrencyCode" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AverageRate]"
+                      dataType="cy"
+                      name="AverageRate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EndOfDayRate]"
+                      dataType="cy"
+                      name="EndOfDayRate" />
+                    <externalMetadataColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      name="ModifiedDate" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyRateID]"
+                      dataType="i4"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyRateID]"
+                      name="CurrencyRateID" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyRateDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CurrencyRateDate]"
+                      name="CurrencyRateDate" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FromCurrencyCode]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FromCurrencyCode]"
+                      name="FromCurrencyCode" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ToCurrencyCode]"
+                      dataType="wstr"
+                      length="3"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ToCurrencyCode]"
+                      name="ToCurrencyCode" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AverageRate]"
+                      dataType="cy"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AverageRate]"
+                      name="AverageRate" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EndOfDayRate]"
+                      dataType="cy"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EndOfDayRate]"
+                      name="EndOfDayRate" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ModifiedDate]"
+                      name="ModifiedDate" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\load Sales_CurrencyRate.Paths[OLE DB Source Output]"
+              endId="Package\load Sales_CurrencyRate\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\load Sales_CurrencyRate\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\load Sales_Customer"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
@@ -7139,6 +7582,14 @@
       DTS:ObjectName="Constraint 13"
       DTS:To="Package\load Sales_SalesOrderDetail" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
+      DTS:CreationName=""
+      DTS:DTSID="{127BC7D2-776B-4675-8E9A-E623EB1A8E46}"
+      DTS:From="Package\delete Sales_CurrencyRate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 14"
+      DTS:To="Package\load Sales_CurrencyRate" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
       DTS:DTSID="{C2B9980C-2727-4CE4-AB0A-4B5821CCA8E2}"
@@ -7639,6 +8090,48 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,34.9000001653036" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="205.6,41.6"
+          Id="Package\delete Sales_CurrencyRate"
+          TopLeft="651.666640771761,955.66666902913" />
+        <NodeLayout
+          Size="196.8,41.6"
+          Id="Package\load Sales_CurrencyRate"
+          TopLeft="665.833306875495,1039.53333601263" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 14]"
+          TopLeft="754.466640771761,997.26666902913">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.76666610373388,42.266666983498"
+              Start="0,0"
+              End="9.76666610373388,34.766666983498">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.133333491749" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.133333491749"
+                    Point2="0,21.133333491749"
+                    Point3="4,21.133333491749" />
+                  <mssgle:LineSegment
+                    End="5.76666610373388,21.133333491749" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.76666610373388,21.133333491749"
+                    Point2="9.76666610373388,21.133333491749"
+                    Point3="9.76666610373388,25.133333491749" />
+                  <mssgle:LineSegment
+                    End="9.76666610373388,34.766666983498" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8633,6 +9126,82 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\load Sales_Store\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\load Sales_CurrencyRate">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\load Sales_CurrencyRate\OLE DB Source"
+          TopLeft="226.666657659743,123.933334318267" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\load Sales_CurrencyRate\OLE DB Destination"
+          TopLeft="271.666655871604,231.400001839002" />
+        <EdgeLayout
+          Id="Package\load Sales_CurrencyRate.Paths[OLE DB Source Output]"
+          TopLeft="302.666657659743,165.533334318267">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="54.5999982118608,65.866667520735"
+              Start="0,0"
+              End="54.5999982118608,58.366667520735">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.9333337603675" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.9333337603675"
+                    Point2="0,32.9333337603675"
+                    Point3="4,32.9333337603675" />
+                  <mssgle:LineSegment
+                    End="50.5999982118608,32.9333337603675" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50.5999982118608,32.9333337603675"
+                    Point2="54.5999982118608,32.9333337603675"
+                    Point3="54.5999982118608,36.9333337603675" />
+                  <mssgle:LineSegment
+                    End="54.5999982118608,58.366667520735" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\load Sales_CurrencyRate\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\load Sales_CurrencyRate\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
